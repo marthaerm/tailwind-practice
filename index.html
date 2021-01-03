@@ -55,6 +55,12 @@
                     Cards
                 </button>
             </a>
+
+            <a href="#flexbox">
+                <button class="w-full bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                    Flexbox
+                </button>
+            </a>
             
         </div>
 
@@ -177,8 +183,286 @@
             </div>
         </div>
 
-        
+        <h2 id="flexbox" class="text-purple-600 text-4xl text-center font-bold">Flexbox</h2>
+        <div class="m-6">
+            <p class="text-white bg-purple-300 rounded-full w-64 mb-2 text-center">parent content <span class="font-bold">container</span></p>
+            <p class="text-purple-600 bg-purple-200 rounded-full w-64 text-center">child content <span class="font-bold">items</span></p>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-purple-500 mb-6 pl-6">flex direction</h3>
+
+        <div class="grid grid-cols-4">
+            <p class="text-center">.flex-row</p>
+            <p class="text-center">.flex-row-reverse</p>
+            <p class="text-center">.flex-col</p>
+            <p class="text-center">.flex-col-reverse</p>
+            
+            <div class="flex flex-row bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex flex-row-reverse bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex flex-col bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex flex-col-reverse bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-purple-500 mb-6 pl-6">flex wrap</h3>
+
+        <div class="grid grid-cols-3">
+            <p class="text-center">.flex-wrap</p>
+            <p class="text-center">.flex-wrap-reverse</p>
+            <p class="text-center">.flex-nowrap (default)</p>
+            
+            <div class="flex flex-wrap bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+            </div>
+
+            <div class="flex flex-wrap-reverse bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+            </div>
+
+            <div class="flex flex-nowrap bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-purple-500 mb-6 pl-6">justify content</h3>
+
+        <div class="grid grid-cols-3">
+            <p class="text-center">.justify-start</p>
+            <p class="text-center">.justify-end</p>
+            <p class="text-center">.justify-center</p>
+            
+            <div class="flex justify-start bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex justify-end bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex justify-center bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <p class="text-center">.justify-between</p>
+            <p class="text-center">.justify-around</p>
+            <p class="text-center">.justify-evenly</p>
+
+            <div class="flex justify-between bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex justify-around bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+
+            <div class="flex justify-evenly bg-purple-300 m-6 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-semibold text-purple-500 mb-6 pl-6">align items</h3>
+
+        <div class="grid grid-cols-3">
+            <p class="text-center">.items-start</p>
+            <p class="text-center">.items-end</p>
+            <p class="text-center">.items-center</p>
+            
+            <div class="flex items-start bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+
+            <div class="flex items-end bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+
+            <div class="flex items-center bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+
+            <p class="text-center">.items-baseline</p>
+            <p class="text-center">.items-stretch</p>
+            <p class="text-center">default</p>
+
+            <div class="flex items-baseline bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+
+            <div class="flex items-stretch bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+
+            <div class="flex bg-purple-300 m-6 h-24 rounded-lg">
+                <div class="bg-purple-50 w-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 m-2 p-3 rounded-full text-center">4</div>
+            </div>
+        </div>
     </div>
     
+    <h3 class="text-2xl font-semibold text-purple-500 mb-6 pl-6">align content</h3>
+
+        <div class="grid grid-cols-3">
+            <p class="text-center">.content-center</p>
+            <p class="text-center">.content-start</p>
+            <p class="text-center">.content-end</p>
+            
+            <div class="flex flex-wrap content-center bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+
+            <div class="flex flex-wrap content-start bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+
+            <div class="flex flex-wrap content-end bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+
+            <p class="text-center">.content-between</p>
+            <p class="text-center">.content-around</p>
+            <p class="text-center">.content-evenly</p>
+
+            <div class="flex flex-wrap content-between bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+
+            <div class="flex flex-wrap content-around bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+
+            <div class="flex flex-wrap content-evenly bg-purple-300 m-6 h-48 rounded-lg">
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">1</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">2</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">3</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">4</div>
+                <div class="bg-purple-50 w-12 h-12 m-2 p-3 rounded-full text-center">5</div>
+                <div class="bg-purple-100 w-12 h-12 m-2 p-3 rounded-full text-center">6</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">7</div>
+                <div class="bg-purple-200 w-12 h-12 m-2 p-3 rounded-full text-center">8</div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-4xl font-bold text-green-500 pl-6">References</h3>
+    <ul class="p-6">
+        <li>
+            <p class="underline text-blue-400 hover:no-underline hover:text-blue-500">
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A complete guide to flexbox</a>
+            </p>
+        </li>
+
+        <li>
+            <p class="underline text-blue-400 hover:no-underline hover:text-blue-500">
+                <a href="https://www.youtube.com/playlist?list=PLPl81lqbj-4JdoHDiERR2ptkw9zRggXAL">Tailwind CSS - Curso desde 0 [Español]</a>
+            </p>
+        </li>
+
+        <li>
+            <p class="underline text-blue-400 hover:no-underline hover:text-blue-500">
+                <a href="https://tailwindcss.com/docs">
+                    Tailwind CSS documentation
+                </a>
+            </p>
+        </li>
+    </ul>
 </body>
 </html>
