@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <div class="container mx-auto mt-5">
+        
+        <h1 class="text-gray-800 text-6xl text-center font-bold">Hello World! with Tailwind CSS Customized</h1>
+
+        <div class="grid grid-cols-6 p-6 gap-4">
+            <a href="/">
+                <button class="w-full bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    Go to CDN project
+                </button>
+            </a>
+        </div>
+
+        <h2 id="border" class="text-gray-600 text-4xl text-center font-bold">Customized colors</h2>
+        <div class="grid grid-cols-5 gap-4 p-6 text-center">
+            <p class="shadow rounded-lg p-2 bg-primary text-white">Primary</p>
+            <p class="shadow rounded-lg p-2 bg-success text-white">Success</p>
+            <p class="shadow rounded-lg p-2 bg-warning text-white">Warning</p>
+            <p class="shadow rounded-lg p-2 bg-info text-white">Info</p>
+            <p class="shadow rounded-lg p-2 bg-danger text-white">Danger</p>
+    
+        </div>
+
+        <h2 id="border" class="text-gray-600 text-4xl text-center font-bold">Customized classes</h2>
+        <div class="grid grid-cols-4 cols-end-2 p-6">
+            <button class="btn btn-primary">
+                btn btn-primary
+            </button>
+        </div>
+
+        <h2 id="cards" class="text-gray-500 text-4xl text-center font-bold">Cards - Customized classes</h2>
+        <div class="grid grid-cols-3">
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1508747043924-7a1055e4dccf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="card-head">
+                    <p class="card-title">.card-title</p>
+                    <div class="card-content">
+                        <p>.card-content</p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat mollitia voluptatibus error dignissimos impedit maxime modi dolore neque nostrum perferendis accusantium vitae.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="pill">.pill</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>

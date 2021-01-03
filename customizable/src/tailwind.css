@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+  @apply w-full text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-primary{
+  @apply bg-primary; 
+}
+
+.btn-primary:hover{
+  @apply bg-primary-700;
+}
+
+.card{
+  @apply m-5 shadow-xl rounded-lg
+}
+
+.card-img{
+  @apply w-full rounded
+}
+
+.card-head{
+  @apply px-6 py-4;
+}
+
+.card-title{
+  @apply font-bold;
+}
+
+.card-content{
+ @apply mt-2 text-gray-500;
+}
+
+.card-footer{
+  @apply px-6 py-4;
+}
+
+.pill{
+  @apply inline-block bg-yellow-200 rounded-full px-2 font-semibold text-sm text-gray-800;
+}
