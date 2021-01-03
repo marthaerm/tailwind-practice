@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>
+        My first website using Tailwind CSS CDN
+    </title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto mt-5">
+        
+        <h1 class="text-gray-800 text-6xl text-center font-bold">Hello World! with Tailwind CSS CDN</h1>
+
+        <div class="grid grid-cols-6 p-6 gap-4">
+            <a href="#border">
+                <button class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                    Border
+                </button>
+            </a>
+
+            <a href="#alignment">
+                <button class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Alignment
+                </button>
+            </a>
+
+            <a href="#transform">
+                <button class="w-full bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+                    Text Transformation
+                </button>
+            </a>
+
+            <a href="#shadow">
+                <button class="w-full bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+                    Shadow
+                </button>
+            </a>
+
+            <a href="#grid">
+                <button class="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Grid
+                </button>
+            </a>
+
+            <a href="#cards">
+                <button class="w-full bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    Cards
+                </button>
+            </a>
+            
+        </div>
+
+        <h2 id="border" class="text-green-600 text-4xl text-center font-bold">Border</h2>
+        <div class="grid grid-cols-4 gap-4 p-6">
+            <p class="rounded-sm p-3 bg-green-200 text-white">rounded-sm</p>
+            <p class="rounded-md p-3 bg-green-200 text-white">rounded-md</p>
+            <p class="rounded-lg p-3 bg-green-200 text-white">rounded-lg</p>
+            <p class="rounded-full p-3 bg-green-200 text-white">rounded-full</p>
+
+
+            <p class="rounded-t-lg py-3 px-6 bg-green-300 text-white">rounded-t-lg top</p>
+            <p class="rounded-r-lg py-3 px-6 bg-green-300 text-white">rounded-r-lg right</p>
+            <p class="rounded-b-lg py-3 px-6 bg-green-300 text-white">rounded-b-lg bottom</p>
+            <p class="rounded-l-lg py-3 px-6 bg-green-300 text-white">rounded-l-lg left</p>
+            
+            <p class="rounded-tl-lg py-3 px-6 bg-green-400 text-white">rounded-tl-lg top left</p>
+            <p class="rounded-tr-lg py-3 px-6 bg-green-400 text-white">rounded-tr-lg top right</p>
+            <p class="rounded-bl-lg py-3 px-6 bg-green-400 text-white">rounded-bl-lg bottom left</p>
+            <p class="rounded-br-lg py-3 px-6 bg-green-400 text-white">rounded-br-lg bottom right</p>
+
+            <p class="rounded-sm p-3 border-2 border-green-200 text-green-600">rounded-sm</p>
+            <p class="rounded-md p-3 border-2 border-green-200 text-green-600">rounded-md</p>
+            <p class="rounded-lg p-3 border-2 border-green-200 text-green-600">rounded-lg</p>
+            <p class="rounded-full p-3 border-2 border-green-200 text-green-600">rounded-full</p>
+
+            <p class="border-solid rounded-sm p-3 border-2 border-green-300 text-green-600">border-solid</p>
+            <p class="border-dashed rounded-md p-3 border-2 border-green-300 text-green-600">border-dashed</p>
+            <p class="border-dotted rounded-lg p-3 border-2 border-green-300 text-green-600">border-dotted</p>
+            <p class="border-double rounded-full p-3 border-2 border-green-300 text-green-600">border-double</p>
+            
+        </div>
+
+
+        <h2 id="alignment" class="text-blue-600 text-4xl text-center font-bold">Alignment</h2>
+        <div class="grid grid-cols-3 gap-4 p-6">
+            <p class="bg-blue-300 rounded-lg p-3 text-white">Left</p>
+            <p class="bg-blue-300 rounded-lg p-3 text-white text-center">Center</p>
+            <p class="bg-blue-300 rounded-lg p-3 text-white text-right">Right</p>
+        </div>
+
+        <h2 id="transform" class="text-indigo-600 text-4xl text-center font-bold">Text Transformation</h2>
+        <div class="grid grid-cols-3 gap-4 p-6 text-center">
+            <p class="bg-indigo-300 rounded-lg p-3 text-white uppercase">uppercase</p>
+            <p class="bg-indigo-300 rounded-lg p-3 text-white lowercase">LOWERCASE</p>
+            <p class="bg-indigo-300 rounded-lg p-3 text-white capitalize">capitalize</p>
+        </div>
+        
+        
+        <h2 id="shadow" class="text-pink-600 text-4xl text-center font-bold">Shadow</h3>
+        <div class="grid grid-cols-7 gap-4 p-6 text-center">
+            <p class="shadow-xs rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow-sm rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow-md rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow-lg rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow-xl rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+            <p class="shadow-2xl rounded-lg p-2 bg-pink-300 text-white">outer shadow</p>
+    
+        </div>
+        
+        <h2 id="grid" class="text-red-600 text-4xl text-center font-bold">Grid</h2>
+        <div class="grid grid-rows-6 gap-4 p-6">
+            <div class="grid grid-cols-3 gap-4 row-span-2">
+                <div class="col-span-12">row-span-2</div>
+                <div class="rounded-lg p-2 bg-red-300"></div>
+                <div class="rounded-lg p-2 bg-red-300"></div>
+                <div class="rounded-lg p-2 bg-red-300"></div>
+            </div>
+    
+            <div class="grid grid-cols-3 gap-4">
+                <div class="rounded-lg p-2 bg-red-400 col-span-2 text-white">col-span-2</div>
+                <div class="rounded-lg p-2 bg-red-300"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4">
+                <div class="rounded-lg p-2 bg-red-300 "></div>
+                <div class="rounded-lg p-2 bg-red-400 col-start-3 text-white">col-start-3</div>
+            </div>
+
+            <div class="grid grid-cols-6 gap-4">
+                <div class="rounded-lg p-2 bg-red-300 col-start-2 col-end-4 text-white">col-start-2 sol-end-4</div>
+                <div class="rounded-lg p-2 bg-red-400 col-start-6 text-white">col-start-6</div>
+            </div>
+        </div>
+
+        <h2 id="cards" class="text-yellow-500 text-4xl text-center font-bold">Cards</h2>
+        <div class="grid grid-cols-3">
+            <div class="m-5 shadow-xl rounded-lg">
+                <img class="w-full rounded" src="https://images.unsplash.com/photo-1508747043924-7a1055e4dccf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="px-6 py-4">
+                    <p class="text-md font-bold">Title</p>
+                    <p class="mt-2 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat mollitia voluptatibus error dignissimos impedit maxime modi dolore neque nostrum perferendis accusantium vitae nobis nulla, molestias ex odio officiis. Sed!</p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-yellow-200 rounded-full px-2 font-semibold text-sm text-gray-800">asd</span>
+                </div>
+            </div>
+
+            <div class="m-5 shadow-xl rounded-lg">
+                <img class="w-full rounded" src="https://images.unsplash.com/photo-1508747043924-7a1055e4dccf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="px-6 py-4">
+                    <p class="text-md font-bold">Title</p>
+                    <p class="mt-2 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat mollitia voluptatibus error dignissimos impedit maxime modi dolore neque nostrum perferendis accusantium vitae nobis nulla, molestias ex odio officiis. Sed!</p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-yellow-200 rounded-full px-2 font-semibold text-sm text-gray-800">asd</span>
+                </div>
+            </div>
+            
+            <div class="m-5 shadow-xl rounded-lg">
+                <img class="w-full rounded" src="https://images.unsplash.com/photo-1508747043924-7a1055e4dccf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                <div class="px-6 py-4">
+                    <p class="text-md font-bold">Title</p>
+                    <p class="mt-2 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quaerat mollitia voluptatibus error dignissimos impedit maxime modi dolore neque nostrum perferendis accusantium vitae nobis nulla, molestias ex odio officiis. Sed!</p>
+                </div>
+                <div class="px-6 py-4">
+                    <span class="inline-block bg-yellow-200 rounded-full px-2 font-semibold text-sm text-gray-800">asd</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
